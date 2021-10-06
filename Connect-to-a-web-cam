@@ -7,10 +7,11 @@ import cv2
 
 webcamusername = 'insert webcam username here'
 webcampassword = 'insert password here'
+webcamlocalipaddress = 'insert actual camera ip address here. It will be something like 192.168.0.56. You can find it using an ipscanner on your network or log onto your router to see the IP address of your Raspberry Pi'
 
 connectionstatus = 'Null'
 
-url = 'rtsp://' + webcamusername + ':'+ webcampassword + '@192.168.0.41:88/videoMain'
+url = 'rtsp://' + webcamusername + ':'+ webcampassword + '@' + webcamlocalipaddress +':88/videoMain'
 
 camera = cv2.VideoCapture(url)
 
@@ -35,3 +36,4 @@ while True:
 # Release handle to the webcam
 camera.release()
 cv2.destroyAllWindows()
+
