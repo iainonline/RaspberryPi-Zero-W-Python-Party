@@ -1,5 +1,5 @@
 # tested on RaspberryPi Zero W
-# I used Thonny IDE with a virtual enviroment running Python 3.7.3
+# I used Thonny IDE with a virtual environment running Python 3.7.3
 # I used a wireless Foscam running at 1080p
 # username and password is hardcoded so be careful if you share
 
